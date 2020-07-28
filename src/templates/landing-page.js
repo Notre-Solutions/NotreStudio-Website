@@ -28,7 +28,7 @@ const Landing = ({ data }) => {
                 dolor sit amet consectetur adipiscing elit.{" "}
               </p>
               <Link
-                href="/download"
+                to="/download"
                 title=""
                 className="btn btn-lg btn-primary"
               >

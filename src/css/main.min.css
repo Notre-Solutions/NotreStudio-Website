@@ -30,7 +30,7 @@ body {
   font-size: 15px;
   line-height: 1.81;
   color: #555;
-  background-color: #fff;
+  background-color: black;
   padding-top: 80px;
 }
 
@@ -5635,8 +5635,8 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #fff;
-  border-color: #eee;
+  background-color: black;
+  border-color: #090909;
 }
 
 .navbar-default .navbar-brand {
@@ -6959,7 +6959,7 @@ button.close {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 995px) {
   .lead {
     font-size: 22.5px;
   }
@@ -7288,6 +7288,12 @@ button.close {
   .navbar > .container .navbar-brand {
     margin-left: -15px;
   }
+  .home-img {
+    height: 2rem;
+    position: relative;
+    top: -3rem !important;
+    width: 20rem !important;
+  }
   .navbar-header {
     float: left;
   }
@@ -7298,7 +7304,12 @@ button.close {
             box-shadow: none;
   }
   .navbar-collapse.collapse {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -8261,7 +8272,7 @@ button.close {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 995px) {
   .carousel-control .glyphicon-chevron-left {
     width: 30px;
     height: 30px;
@@ -8300,7 +8311,7 @@ button.close {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 995px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
   }

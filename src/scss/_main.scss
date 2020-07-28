@@ -30,7 +30,7 @@ body {
 	font-size: 15px;
 	line-height: 1.81;
 	color: $color_3;
-	background-color: $background_color_2;
+	background-color: $main_background_color;
 	padding-top: 80px;
 }
 article {
@@ -5069,8 +5069,8 @@ tbody.collapse.in {
 	margin-bottom: 26.5px;
 }
 .navbar-default {
-	background-color: $background_color_2;
-	border-color: $border_color_26;
+	background-color: $main_background_color;
+	border-color: $border_color_28;
 	.navbar-brand {
 		color: $color_7;
 		&:focus {
