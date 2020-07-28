@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
+import Arrow from "../img/arrow.inline.svg";
 
 const Landing = ({ data }) => {
   const {
@@ -20,7 +21,7 @@ const Landing = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>Posuere lorem Ipsum</h1>
+              <h1>Get Your Business Online</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -39,12 +40,12 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="section-container border-section-container">
+      <div className="white-text-container section-container border-section-container">
         <div className="container">
           <div className="row">
             <div className="col-md-12 section-container-spacer">
               <div className="text-center">
-                <h2>Vivamus laoreet</h2>
+                <h2>What We Offer</h2>
                 <p>
                   {" "}
                   Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit
@@ -56,7 +57,7 @@ const Landing = ({ data }) => {
 
             <div className="col-md-4">
               <div className="fa-container">
-                <i className="fa fa-comment-o fa-3x" aria-hidden="true"></i>
+                <i className="fa fa-server fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Consectetur</h3>
@@ -72,7 +73,7 @@ const Landing = ({ data }) => {
             </div>
             <div className="col-md-4">
               <div className="fa-container">
-                <i className="fa fa-heart-o fa-3x" aria-hidden="true"></i>
+                <i className="fa fa-laptop-code fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Malesuada</h3>
@@ -88,7 +89,7 @@ const Landing = ({ data }) => {
             </div>
             <div className="col-md-4">
               <div className="fa-container">
-                <i className="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+                <i className="fa fa-palette fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Phasellus</h3>
@@ -106,65 +107,12 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="section-container">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12">
-              <div
-                id="carouselExampleIndicators"
-                className="carousel slide"
-                data-ride="carousel"
-              >
-                <div className="carousel-inner" role="listbox">
-                  <div className="item active">
-                    <Img
-                      className="img-responsive"
-                      alt=""
-                      fluid={img5.childImageSharp.fluid}
-                    />
-                  </div>
-                  <div className="item">
-                    <Img
-                      className="img-responsive"
-                      alt=""
-                      fluid={img7.childImageSharp.fluid}
-                    />
-                  </div>
-                  <div className="item">
-                    <Img
-                      className="img-responsive"
-                      alt=""
-                      fluid={img5.childImageSharp.fluid}
-                    />
-                  </div>
-                </div>
-                <ol className="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    className="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="section-container background-color-container white-text-container">
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
               <div className="text-center">
-                <h2>Vivamus laoreet</h2>
+                <h2>Why Hire Us?</h2>
                 <p>
                   {" "}
                   Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit
@@ -173,13 +121,13 @@ const Landing = ({ data }) => {
                   lacus. Turpis egestas pretium aenean pharetra magna ac. Id
                   cursus metus aliquam eleifend mi.{" "}
                 </p>
-                <a
-                  href="./download.html"
+                <Link
+                  href="/projects"
                   title=""
                   className="btn btn-primary btn-lg"
                 >
-                  Download
-                </a>
+                  Projects
+                </Link>
               </div>
             </div>
           </div>
@@ -200,21 +148,21 @@ const Landing = ({ data }) => {
             <div className="col-md-5">
               <ul className="features">
                 <li>
-                  <h3>Dui augue</h3>
+                  <h3>Beautiful Websites</h3>
                   <p>
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
                   </p>
                 </li>
                 <li>
-                  <h3>Malesuada</h3>
+                  <h3>Great User Experience</h3>
                   <p>
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
                   </p>
                 </li>
                 <li>
-                  <h3>Bibendum</h3>
+                  <h3>Professional Service</h3>
                   <p>
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
@@ -222,28 +170,17 @@ const Landing = ({ data }) => {
                 </li>
               </ul>
             </div>
-
-            <div className="row">
-              <div className="col-md-4">
-                <Img
-                  className="img-responsive page-base-image"
-                  alt=""
-                  fluid={logo01.childImageSharp.fluid}
-                />
-              </div>
-              <div className="col-md-4">
-                <Img
-                  className="img-responsive page-base-image"
-                  alt=""
-                  fluid={logo02.childImageSharp.fluid}
-                />
-              </div>
-              <div className="col-md-4">
-                <Img
-                  className="img-responsive page-base-image"
-                  alt=""
-                  fluid={logo03.childImageSharp.fluid}
-                />
+          </div>
+        </div>
+      </div>
+      <div className="section-container background-color-container white-text-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12">
+              <h2>Lets Work Together</h2>
+              <div className="arrrow">
+                <Arrow />
+                <span className="arrow-text">Start a Project</span>
               </div>
             </div>
           </div>

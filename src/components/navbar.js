@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import classnames from "classnames";
+import Logo from "../img/fullLogo.inline.svg";
 
 class navbar extends React.Component {
   constructor() {
@@ -31,7 +32,9 @@ class navbar extends React.Component {
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
-                <Link className="navbar-brand" to="/"></Link>
+                <Link className="navbar-brand" to="/">
+                  <Logo className="svg" />
+                </Link>
               </div>
 
               <div
