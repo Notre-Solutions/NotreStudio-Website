@@ -22,11 +22,11 @@ module.exports = {
         fonts: [
           {
             family: `Montserrat`,
-            variants: [`400`, `700`, `200``italic`, `bold`],
+            variants: [`400`, `700`, `200`, `italic`, `bold`],
           },
           {
             family: `Source Sans Pro`,
-            subsets: [`400`, `700`, `200``italic`, `bold`],
+            variants: [`400`, `700`, `200`, `italic`, `bold`],
           },
         ],
       },

@@ -86,9 +86,12 @@ class navbar extends React.Component {
                     <Link to="/contact">Contact</Link>
                   </li>
                   <li>
-                    <Link to="/components">Components</Link>
+                    <Link to="/projects">Projects</Link>
                   </li>
-                  <li>
+                  {/* <li>
+                    <Link to="/components">Components</Link>
+                  </li> */}
+                  {/* <li>
                     <p>
                       <Link
                         to="/download"
@@ -97,7 +100,7 @@ class navbar extends React.Component {
                         Download
                       </Link>
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
