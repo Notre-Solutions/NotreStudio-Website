@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from 'gatsby'
-const pricingCard = ({title, amount, currency, period, features, to}) => {
+const pricingCard = ({title, amount, currency, period, features, to, primaryColor}) => {
   console.log(currency)
   return (
     <div className="col-md-4">
-      <div className="pricing-card pricing-primary">
+      <div className={`pricing-card pricing-primary-${primaryColor} `}>
         <h3>{title}</h3>
         <h6 className="price">
           {amount} <span>{`${currency}/${period}`}</span>

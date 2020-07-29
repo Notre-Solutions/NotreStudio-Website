@@ -6656,6 +6656,12 @@ button.close {
   border-bottom: 1px solid #eee;
 }
 
+.pricing-icon {
+  font-size: 7.5rem !important;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
 .white-text-container h1 {
   color: #fff;
   text-shadow: 0 1px 3px #000;
@@ -6745,7 +6751,7 @@ button.close {
 
 .pricing-card {
   background: #ddd;
-  padding: 5rem 3rem;
+  padding: 0.5rem 3rem;
   text-align: center;
 }
 
@@ -6755,7 +6761,7 @@ button.close {
 
 .pricing-card .price {
   font-size: 5em;
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: #fff;
 }
 
@@ -6765,6 +6771,18 @@ button.close {
 
 .pricing-card.pricing-primary {
   background-color: #4e74ff;
+}
+
+.pricing-card.pricing-primary-1 {
+  background-color: #4e74ff;
+}
+
+.pricing-card.pricing-primary-2 {
+  background-color: #ffc105;
+}
+
+.pricing-card.pricing-primary-3 {
+  background-color: #d9534f;
 }
 
 .pricing-card.pricing-info {
