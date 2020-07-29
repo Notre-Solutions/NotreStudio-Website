@@ -5986,7 +5986,11 @@ button.close {
     margin-left: 20px;
   }
 }
-
+.pricing-icon {
+  font-size: 7.5rem !important;
+  padding-bottom: 3rem;
+  color: $color_9;
+}
 .white-text-container {
   h1 {
     color: $color_9;
@@ -6067,14 +6071,14 @@ button.close {
 }
 .pricing-card {
   background: #ddd;
-  padding: 5rem 3rem;
+  padding: 0.5rem 3rem;
   text-align: center;
   h3 {
     color: $color_9;
   }
   .price {
     font-size: 5em;
-    padding: 2rem 0;
+    padding: 1rem 0;
     color: $color_9;
     span {
       font-size: 0.2em;
@@ -6083,6 +6087,15 @@ button.close {
 }
 .pricing-card.pricing-primary {
   background-color: $background_color_49;
+}
+.pricing-card.pricing-primary-1 {
+  background-color: $background_color_49;
+}
+.pricing-card.pricing-primary-2 {
+  background-color: $background_color_29;
+}
+.pricing-card.pricing-primary-3 {
+  background-color: $background_color_35;
 }
 .pricing-card.pricing-info {
   background-color: $background_color_50;

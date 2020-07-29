@@ -1,12 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import PricingCard from "../components/pricingCard";
+import PricingSection from "../components/pricingSection";
 const pricing = ({ data }) => {
   const {
     title,
     description,
-    cards,
+    webDev,
+    hosting,
+    webDesign,
   } = data.markdownRemark.frontmatter.pricingPage;
   return (
     <Layout current="pricing">
@@ -15,31 +17,34 @@ const pricing = ({ data }) => {
           <div className="container">
             <div className="row section-container-spacer">
               <div className="col-xs-12">
-                <div className="text-center">
+                <div className="text-center white-text-container">
                   <h1>{title}</h1>
                 </div>
-                <div className="col-md-8 col-md-offset-2">
-                  <p>
-                    {description}
-                  </p>
+                <div className="col-md-8 col-md-offset-2 text-center white-text-container">
+                  <p>{description}</p>
                 </div>
               </div>
             </div>
-
-            <div className="row">
-              {cards.map((obj) => {
-                return (
-                  <PricingCard
-                    title={obj.title}
-                    amount={obj.amount}
-                    currency={obj.currency}
-                    period={obj.period}
-                    features={obj.features}
-                    to={obj.to}
-                  />
-                );
-              })}
-            </div>
+            <PricingSection
+              title={webDev.title}
+              cards={webDev.cards}
+              description={webDev.description}
+              color={webDev.color}
+            />
+            <br/>
+            <PricingSection
+              title={hosting.title}
+              cards={hosting.cards}
+              description={hosting.description}
+              color={hosting.color}
+            />
+            <br/>
+            <PricingSection
+              title={webDesign.title}
+              cards={webDesign.cards}
+              description={webDesign.description}
+              color={webDesign.color}
+            />
           </div>
         </div>
       </div>
@@ -55,13 +60,46 @@ export const pageQuery = graphql`
         pricingPage {
           title
           description
-          cards {
+          webDev {
             title
-            amount
-            currency
-            period
-            features {
-              feature
+            description
+            color
+            cards {
+              title
+              amount
+              currency
+              period
+              features {
+                feature
+              }
+            }
+          }
+          hosting {
+            title
+            description
+            color
+            cards {
+              title
+              amount
+              currency
+              period
+              features {
+                feature
+              }
+            }
+          }
+          webDesign {
+            title
+            description
+            color
+            cards {
+              title
+              amount
+              currency
+              period
+              features {
+                feature
+              }
             }
           }
         }
