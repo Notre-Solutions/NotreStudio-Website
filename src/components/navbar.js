@@ -3,6 +3,11 @@ import { Link, graphql, StaticQuery } from "gatsby";
 import classnames from "classnames";
 import Logo from "../img/fullLogo.inline.svg";
 import Img from "gatsby-image";
+import gsap from "gsap";
+import TransitionLink, {
+  TransitionPortal,
+} from "gatsby-plugin-transition-link";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 class navbar extends React.Component {
   constructor() {
@@ -11,12 +16,46 @@ class navbar extends React.Component {
       active: false,
     };
     this.toggleClass = this.toggleClass.bind(this);
+    this.verticalAnimation = this.verticalAnimation.bind(this);
   }
   toggleClass() {
     const currentState = this.state.active;
     console.log("Hi");
     this.setState({ active: !currentState });
   }
+
+  verticalAnimation = ({ length }, direction) => {
+    const directionTo = direction === "up" ? "-100%" : "100%";
+    const directionFrom = direction === "up" ? "100%" : "-100%";
+
+    // convert ms to s for gsap
+    const seconds = length;
+
+    return gsap
+      .timeline()
+      .set(this.transitionCover, { y: directionFrom })
+      .to(this.transitionCover, {
+        y: "0%",
+        ease: "power1.easeInOut",
+        duration: seconds / 2,
+      })
+      .set(this.layoutContents, { opacity: 0 })
+      .to(this.transitionCover, {
+        y: directionTo,
+        ease: "power1.easeIn",
+        duration: seconds / 2,
+      });
+  };
+
+  test(entry, node) {
+    return gsap.from(node.querySelectorAll("h2, p, a, pre"), {
+      opacity: 0,
+      y: "+=50",
+      duration: 1,
+      stagger: 0.1,
+    });
+  }
+
   render() {
     return (
       <>
@@ -75,21 +114,57 @@ class navbar extends React.Component {
                       "dropdown active": this.state.active,
                     })}
                   >
-                    <Link to="/" className="active">
+                    <AniLink to="/" className="active">
                       Home
-                    </Link>
+                    </AniLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/about"> About</Link>
+                  </li> */}
+                  <li>
+                    <TransitionLink
+                      to="/about"
+                      exit={{
+                        length: 1,
+                        trigger: ({ exit }) =>
+                          this.verticalAnimation(exit, "down"),
+                        state: { test: "exit state" },
+                      }}
+                      entry={{
+                        delay: 0.5,
+                        trigger: ({ entry, node }) => this.test(entry, node),
+                      }}
+                    >
+                      About
+                    </TransitionLink>
                   </li>
                   <li>
+                    <AniLink cover to="/pricing">
+                      Pricing
+                    </AniLink>
+                  </li>
+                  {/* <li>
                     <Link to="/pricing"> Pricing </Link>
+                  </li> */}
+                  <li>
+                    <TransitionLink
+                      to="/contact"
+                      exit={{
+                        length: 1,
+                        trigger: ({ exit }) =>
+                          this.verticalAnimation(exit, "down"),
+                        state: { test: "exit state" },
+                      }}
+                      entry={{
+                        delay: 0.5,
+                        trigger: ({ entry, node }) => this.test(entry, node),
+                      }}
+                    >
+                      Contact
+                    </TransitionLink>
                   </li>
                   <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link to="/projects">Projects</Link>
+                    <TransitionLink to="/projects">Projects</TransitionLink>
                   </li>
                   {/* <li>
                     <Link to="/components">Components</Link>
