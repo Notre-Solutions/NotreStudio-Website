@@ -9,6 +9,7 @@ const about = ({ data }) => {
     paragraph1,
     paragraph2,
     hero,
+    team,
     bodyImageLeft,
     bodyImageRight,
     signature,
@@ -33,31 +34,38 @@ const about = ({ data }) => {
       <div className="section-container">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-8 col-md-offset-2">
+            <div className="col-xs-12 col-md-8 col-md-offset-2 margin-top-remove">
               <div className="text-center">
                 <h1>{title}</h1>
               </div>
               <p className="section-container-spacer">{paragraph1}</p>
+              <div className="text-center padding-top">
+                <h1>{team.title}</h1>
+              </div>
 
-              <div className="row section-container-spacer">
-                <div className="col-md-6">
-                  <Img
-                    className="img-responsive"
-                    alt=""
-                    fluid={bodyImageLeft.childImageSharp.fluid}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <Img
-                    className="img-responsive"
-                    alt=""
-                    fluid={bodyImageRight.childImageSharp.fluid}
-                  />
-                </div>
+              <div className="row section-container-spacer text-center ">
+                <p>{team.paragraph}</p>
+                {team.members.map((member) => {
+                  return (
+                    <>
+                      <div className="col-md-6">
+                        <Img
+                          className="img-responsive"
+                          alt=""
+                          fluid={member.img.childImageSharp.fluid}
+                        />
+
+                        <h4>{member.name}</h4>
+                        <h3>{member.job}</h3>
+                        <p>{member.message}</p>
+                      </div>
+                    </>
+                  );
+                })}
               </div>
             </div>
 
-            <div className="col-xs-12 col-md-8 col-md-offset-2">
+            <div className="col-xs-12 col-md-8 col-md-offset-2 text-center padding-top">
               <p>{paragraph2}</p>
               <small className="signature pull-right">{signature}</small>
             </div>
@@ -79,6 +87,22 @@ export const pageQuery = graphql`
           paragraph1
           paragraph2
           signature
+          team {
+            title
+            paragraph
+            members {
+              name
+              job
+              message
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 10000, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
           hero {
             childImageSharp {
               fluid(maxWidth: 10000, quality: 100) {

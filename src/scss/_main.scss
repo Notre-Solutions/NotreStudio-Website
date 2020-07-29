@@ -5962,7 +5962,7 @@ button.close {
 }
 .footer-container {
   padding: 30px 0;
-  // border-top: 1px solid #eee;
+  border-top: 1px solid rgba(85, 85, 85, 0.24);
   .email-container {
     padding: 30px 0;
   }
@@ -6037,7 +6037,7 @@ button.close {
   top: 0;
 }
 .fa-icon {
-  color: $color_1;
+  color: $color_6;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -6046,6 +6046,7 @@ button.close {
   display: inline-block;
   border-radius: 60px;
   box-shadow: 0 0 2px #888;
+  margin-right: 1rem;
   .fa {
     border: none;
   }
@@ -6349,4 +6350,14 @@ button.close {
 .page-padding {
   padding-top: 15rem;
   padding-bottom: 4rem;
+}
+
+.btn-newsletter {
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.margin-top-remove {
+  margin-top: -15rem;
 }

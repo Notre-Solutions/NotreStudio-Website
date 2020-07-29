@@ -23,21 +23,21 @@ export default function footer() {
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fab fa-facebook" aria-hidden="true"></i>
                   </a>
                   <a
                     href="https://twitter.com/"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                    <i className="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fab fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </p>
                 <p>
