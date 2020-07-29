@@ -36,7 +36,7 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="white-text-container section-container border-section-container">
+      <div className="white-text-container section-container">
         <div className="container">
           <div className="row">
             <div className="col-md-12 section-container-spacer">
