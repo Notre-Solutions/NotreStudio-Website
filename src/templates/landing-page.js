@@ -69,7 +69,7 @@ const Landing = ({ data }) => {
             </div>
             <div className="col-md-4">
               <div className="fa-container">
-                <i className="fa fa-laptop-code fa-3x" aria-hidden="true"></i>
+                <i className="fas fa-laptop-code fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Malesuada</h3>
@@ -85,7 +85,7 @@ const Landing = ({ data }) => {
             </div>
             <div className="col-md-4">
               <div className="fa-container">
-                <i className="fa fa-palette fa-3x" aria-hidden="true"></i>
+                <i className="fas fa-palette fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Phasellus</h3>

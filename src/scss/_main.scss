@@ -709,6 +709,7 @@ h6 {
   }
 }
 p {
+  font-family: $font_family_5;
   margin: 0 0 13.5px;
 }
 .lead {
@@ -5589,7 +5590,7 @@ a.badge {
   font-weight: 700;
   line-height: 1;
   color: $color_1;
-  text-shadow: 0 1px 0 #fff;
+  // text-shadow: 0 1px 0 #fff;
   opacity: 0.2;
   filter: alpha(opacity=20);
   &:focus {
@@ -5684,7 +5685,7 @@ button.close {
   font-size: 20px;
   color: $color_9;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: $background_color_1;
   &:focus {
     outline: 0;
@@ -5839,7 +5840,7 @@ button.close {
   padding-bottom: 20px;
   color: $color_9;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   .btn {
     text-shadow: none;
   }
@@ -5994,31 +5995,31 @@ button.close {
 .white-text-container {
   h1 {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   h2 {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   h3 {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   h4 {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   h5 {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   p {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
   span {
     color: $color_9;
-    text-shadow: 0 1px 3px #000;
+    // text-shadow: 0 1px 3px #000;
   }
 }
 .background-image-container {
@@ -6110,7 +6111,6 @@ button.close {
     position: relative;
     margin-bottom: 30px;
     &:before {
-      font-family: $font_family_8;
       content: "\F00C";
       position: absolute;
       left: -40px;

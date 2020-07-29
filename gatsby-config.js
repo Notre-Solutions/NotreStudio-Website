@@ -17,12 +17,27 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `700`, `200``italic`, `bold`],
+          },
+          {
+            family: `Source Sans Pro`,
+            subsets: [`400`, `700`, `200``italic`, `bold`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
