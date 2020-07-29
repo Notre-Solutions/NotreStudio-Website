@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, StaticQuery } from "gatsby";
 import classnames from "classnames";
 import Logo from "../img/fullLogo.inline.svg";
+import Img from "gatsby-image";
 
 class navbar extends React.Component {
   constructor() {
@@ -43,6 +44,28 @@ class navbar extends React.Component {
                 })}
                 id="navbar-collapse-uarr"
               >
+                {/* <StaticQuery
+                  query={graphql`
+                    query HeaderPic {
+                      file(relativePath: { eq: "Notre Studio2-02.png" }) {
+                        childImageSharp {
+                          fluid(maxWidth: 10000, quality: 100) {
+                            ...GatsbyImageSharpFluid
+                          }
+                        }
+                      }
+                    }
+                  `}
+                  render={(data) => (
+                    <Link to="/" className="active home-img">
+                      <Img
+                        className="img-responsive page-base-image"
+                        alt=""
+                        fluid={data.file.childImageSharp.fluid}
+                      />
+                    </Link>
+                  )}
+                /> */}
                 <ul className="nav navbar-nav navbar-right">
                   <li
                     className={classnames("", {
