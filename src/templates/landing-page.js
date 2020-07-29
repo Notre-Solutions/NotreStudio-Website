@@ -174,7 +174,7 @@ const Landing = ({ data }) => {
           <div className="row">
             <div className="col-xs-12">
               <h2>Lets Work Together</h2>
-              <div className="arrrow">
+              <div className="arrow">
                 <Arrow />
                 <span className="arrow-text">Start a Project</span>
               </div>

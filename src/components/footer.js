@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../img/logo.inline.svg";
 
 export default function footer() {
   return (
@@ -15,8 +16,11 @@ export default function footer() {
                 </p>
               </div>
 
-              <div className="col-md-4">
-                <h4>Do you like ? Share this !</h4>
+              <div className="col-md-4 text-center">
+                {/* <h4>Do you like ? Share this !</h4> */}
+                <div className="logo">
+                  <Logo />{" "}
+                </div>
                 <p>
                   <a
                     href="https://facebook.com/"
@@ -40,7 +44,7 @@ export default function footer() {
                     <i className="fab fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </p>
-                <p>
+                {/* <p>
                   <small>
                     © Untitled | Website created with{" "}
                     <a
@@ -59,7 +63,7 @@ export default function footer() {
                       Unsplash
                     </a>
                   </small>
-                </p>
+                </p> */}
               </div>
 
               <div className="col-md-4">

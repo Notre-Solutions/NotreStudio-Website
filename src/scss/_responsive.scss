@@ -375,14 +375,6 @@
     border-top: 0;
     box-shadow: none;
   }
-  // .navbar-collapse.collapse {
-  // 	display: flex !important;
-  // 	justify-content: space-between;
-  // 	height: auto !important;
-  // 	padding-bottom: 0;
-  // 	overflow: visible !important;
-
-  // }
   .navbar-collapse.in {
     overflow-y: visible;
   }
@@ -1159,6 +1151,29 @@
       max-height: 200px;
     }
   }
+  .navbar {
+    > .container-fluid {
+      .navbar-brand {
+        width: 50%;
+
+        margin-left: 15px;
+        svg {
+          padding-top: 5px;
+          width: 50%;
+        }
+      }
+    }
+    > .container {
+      .navbar-brand {
+        width: 50%;
+        margin-left: 15px;
+        svg {
+          padding-top: 5px;
+          width: 50%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
   .navbar-nav {
@@ -1536,5 +1551,42 @@
   }
   .pricing-features {
     margin-bottom: 30px;
+  }
+  .navbar {
+    > .container-fluid {
+      .navbar-brand {
+        svg {
+          padding-top: 5px;
+          width: 25%;
+        }
+      }
+    }
+    > .container {
+      .navbar-brand {
+        svg {
+          padding-top: 5px;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    > .container-fluid {
+      .navbar-brand {
+        svg {
+          width: 50%;
+        }
+      }
+    }
+    > .container {
+      .navbar-brand {
+        svg {
+          width: 50%;
+        }
+      }
+    }
   }
 }

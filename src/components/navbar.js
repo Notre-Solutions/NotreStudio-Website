@@ -14,6 +14,7 @@ class navbar extends React.Component {
   }
   toggleClass() {
     const currentState = this.state.active;
+    console.log("Hi");
     this.setState({ active: !currentState });
   }
   render() {
@@ -33,9 +34,11 @@ class navbar extends React.Component {
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
-                <Link className="navbar-brand" to="/">
-                  <Logo className="svg" />
-                </Link>
+                <div className="navbar-brand">
+                  <Link to="/">
+                    <Logo />
+                  </Link>
+                </div>
               </div>
 
               <div

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="218.64" height="37.417" viewBox="0 0 218.64 37.417">
   <defs>
     <style>
-      .cls-1 {
-        fill: #fff;
+      .cls-3 {
+        fill: #fff !important;
       }
 
       .cls-2 {
@@ -13,7 +13,7 @@
     </style>
   </defs>
   <g id="Group_3" data-name="Group 3" transform="translate(-336.5 -3116.771)">
-    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" class="cls-1" d="M16.372,5.153l1.908-1.9a2.059,2.059,0,0,1,2.913,0L37.9,19.9a2.043,2.043,0,0,1,0,2.9L21.194,39.46a2.059,2.059,0,0,1-2.913,0l-1.908-1.9a2.054,2.054,0,0,1,.034-2.939l10.356-9.836H2.063A2.055,2.055,0,0,1,0,22.727V19.985a2.055,2.055,0,0,1,2.063-2.056h24.7L16.406,8.092A2.04,2.04,0,0,1,16.372,5.153Z" transform="translate(516.633 3114.123)"/>
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" class="cls-3" d="M16.372,5.153l1.908-1.9a2.059,2.059,0,0,1,2.913,0L37.9,19.9a2.043,2.043,0,0,1,0,2.9L21.194,39.46a2.059,2.059,0,0,1-2.913,0l-1.908-1.9a2.054,2.054,0,0,1,.034-2.939l10.356-9.836H2.063A2.055,2.055,0,0,1,0,22.727V19.985a2.055,2.055,0,0,1,2.063-2.056h24.7L16.406,8.092A2.04,2.04,0,0,1,16.372,5.153Z" transform="translate(516.633 3114.123)"/>
     <line id="Line_1" data-name="Line 1" class="cls-2" x1="189" transform="translate(336.5 3135.5)"/>
   </g>
 </svg>
