@@ -34,7 +34,7 @@ landingPage:
           Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
           lacus. Turpis egestas pretium aenean pharetra magna ac.
   img5: ../img/img-05.jpg
-  img6: ../img/img-06.png
+  img6: ../img/mountainAll.png
   img7: ../img/img-07.jpg
   logo01: ../img/logo-01.png
   logo02: ../img/logo-02.png

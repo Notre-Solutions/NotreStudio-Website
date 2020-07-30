@@ -1,19 +1,77 @@
-import React from "react";
+import React, { useRef } from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import Arrow from "../img/arrow.inline.svg";
+import gsap from "gsap";
+import { useIntersection } from "react-use";
 
 const Landing = ({ data }) => {
-  const {
-    img5,
-    img6,
-    img7,
-    logo01,
-    logo02,
-    logo03,
-  } = data.markdownRemark.frontmatter.landingPage;
-  console.log(data);
+  const { img6 } = data.markdownRemark.frontmatter.landingPage;
+
+  // this is to target the element you want to animate
+  const sectionRef = useRef(null);
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  });
+
+  const sectionRef2 = useRef(null);
+  const intersection2 = useIntersection(sectionRef2, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  });
+
+  const fadeInX = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      x: 0,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+
+  const fadeOutX = (element) => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      x: 60,
+      ease: "power4.out",
+    });
+  };
+
+  const fadeInY = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -10,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+
+  const fadeOutY = (element) => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      y: 0,
+      ease: "power4.out",
+    });
+  };
+
+  intersection2 && intersection2.intersectionRatio < 0.5
+    ? // Not reached
+      fadeOutX(".fadeIn2")
+    : fadeInX(".fadeIn2"); // reached soi animate
+
+  intersection && intersection.intersectionRatio < 1
+    ? // Not reached
+      fadeOutY(".fadeIn")
+    : fadeInY(".fadeIn"); // reached soi animate
+
   return (
     <Layout current="landing">
       <div className="white-text-container background-image-container bg">
@@ -21,15 +79,19 @@ const Landing = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>Get Your Business Online</h1>
-              <p>
+              <h1 className="move-from-left">Get Your Business Online</h1>
+              <p className="move-from-right">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum
                 dolor sit amet consectetur adipiscing elit.{" "}
               </p>
-              <Link to="/download" title="" className="btn btn-lg btn-primary">
-                Download
+              <Link
+                to="/projects"
+                title=""
+                className="btn btn-lg btn-primary move-from-bottom"
+              >
+                Our Work
               </Link>
             </div>
           </div>
@@ -103,13 +165,16 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="section-container background-color-container white-text-container">
+      <div
+        ref={sectionRef}
+        className="section-container background-color-container white-text-container"
+      >
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
               <div className="text-center">
-                <h2>Why Hire Us?</h2>
-                <p>
+                <h2 className="fadeIn">Why Hire Us?</h2>
+                <p className="fadeIn">
                   {" "}
                   Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit
                   amet consectetur adipiscing. Porta non pulvinar neque laoreet.
@@ -120,7 +185,7 @@ const Landing = ({ data }) => {
                 <Link
                   href="/projects"
                   title=""
-                  className="btn btn-primary btn-lg"
+                  className="btn btn-primary btn-lg fadeIn"
                 >
                   Projects
                 </Link>
@@ -130,11 +195,12 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="section-container">
+      <div className="section-container" ref={sectionRef2}>
         <div className="container">
           <div className="row">
             <div className="col-md-7">
               <Img
+                className="fadeIn"
                 className="img-responsive"
                 alt=""
                 fluid={img6.childImageSharp.fluid}
@@ -144,22 +210,22 @@ const Landing = ({ data }) => {
             <div className="col-md-5">
               <ul className="features">
                 <li>
-                  <h3>Beautiful Websites</h3>
-                  <p>
+                  <h3 className="fadeIn2">Beautiful Websites</h3>
+                  <p className="fadeIn2">
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
                   </p>
                 </li>
                 <li>
-                  <h3>Great User Experience</h3>
-                  <p>
+                  <h3 className="fadeIn2">Great User Experience</h3>
+                  <p className="fadeIn2">
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
                   </p>
                 </li>
                 <li>
-                  <h3>Professional Service</h3>
-                  <p>
+                  <h3 className="fadeIn2">Professional Service</h3>
+                  <p className="fadeIn2">
                     Auctor augue mauris augue neque. Posuere lorem ipsum dolor
                     sit amet consectetur adipiscing.
                   </p>
@@ -174,6 +240,7 @@ const Landing = ({ data }) => {
           <div className="row">
             <div className="col-xs-12">
               <h2>Lets Work Together</h2>
+
               <div className="arrow">
                 <Arrow />
                 <span className="arrow-text">Start a Project</span>

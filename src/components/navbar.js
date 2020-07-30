@@ -20,7 +20,6 @@ class navbar extends React.Component {
   }
   toggleClass() {
     const currentState = this.state.active;
-    console.log("Hi");
     this.setState({ active: !currentState });
   }
 
