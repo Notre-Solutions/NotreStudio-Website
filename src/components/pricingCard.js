@@ -9,7 +9,6 @@ const pricingCard = ({
   to,
   primaryColor,
 }) => {
-  console.log(currency);
   return (
     <div className="col-md-4">
       <div class="card">
@@ -38,7 +37,7 @@ const pricingCard = ({
                 <span>{`${currency}${amount}/${period}`}</span>
               </p>
             </div>
-            <Link to={`./${to}`} className="btn btn-primary" title="">
+            <Link to={`/${to}`} className="btn btn-primary" title="">
               Subscribe
             </Link>
           </div>

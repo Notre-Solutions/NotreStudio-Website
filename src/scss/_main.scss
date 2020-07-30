@@ -6306,46 +6306,6 @@ button.close {
 
 /* Other styling elements, that are not necessary for the example */
 
-.website-picture-links {
-  cursor: pointer;
-  position: relative;
-  padding: 10px 20px;
-  transition: all 1s;
-  &:after,
-  &:before {
-    content: " ";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border: 0px solid $border_color_9;
-    transition: all 1s;
-  }
-  &:after {
-    top: -1px;
-    left: -1px;
-    border-top: 5px solid $border_color_9;
-    border-left: 5px solid $border_color_9;
-  }
-  &:before {
-    bottom: -10px;
-    right: -10px;
-    border-bottom: 5px solid $border_color_9;
-    border-right: 5px solid $border_color_9;
-  }
-  &:hover {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background: rgba(255, 255, 255, 0.5);
-    color: $border_color_9;
-    &:before,
-    &:after {
-      width: 100%;
-      height: 100%;
-      border-color: $border_color_9;
-    }
-  }
-}
-
 .padding-top {
   padding-top: 5rem;
 }

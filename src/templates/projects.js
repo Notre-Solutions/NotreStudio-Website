@@ -31,7 +31,7 @@ function projectsArray(array) {
                   className="img-wrapper"
                 >
                   <Img
-                    className="img-responsive inner-img hover-website-link website-picture-links"
+                    className="img-responsive inner-img hover-website-link website-picture-links responsive-margin-top"
                     alt=""
                     fluid={array[j + 1].img.childImageSharp.fluid}
                   />
@@ -74,7 +74,6 @@ const projects = ({ data }) => {
     projects,
   } = data.markdownRemark.frontmatter.projectsPage;
 
-  console.log(data);
   return (
     <Layout current="pricing">
       <div className="page-padding">
