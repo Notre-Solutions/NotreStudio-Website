@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { useIntersection } from "react-use";
 
 const Landing = ({ data }) => {
-  const { img6 } = data.markdownRemark.frontmatter.landingPage;
+  const { img6, img5, img7 } = data.markdownRemark.frontmatter.landingPage;
 
   // this is to target the element you want to animate
   const sectionRef = useRef(null);
@@ -199,12 +199,23 @@ const Landing = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <Img
-                className="fadeIn"
-                className="img-responsive"
-                alt=""
-                fluid={img6.childImageSharp.fluid}
-              />
+              <div className="composition">
+                <Img
+                  className="composition__photo composition__photo--p1"
+                  alt=""
+                  fluid={img6.childImageSharp.fluid}
+                />
+                <Img
+                  className="composition__photo composition__photo--p2"
+                  alt=""
+                  fluid={img5.childImageSharp.fluid}
+                />
+                <Img
+                  className="composition__photo composition__photo--p3"
+                  alt=""
+                  fluid={img7.childImageSharp.fluid}
+                />
+              </div>
             </div>
 
             <div className="col-md-5">

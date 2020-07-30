@@ -33,9 +33,9 @@ landingPage:
           amet consectetur adipiscing. Porta non pulvinar neque laoreet.
           Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
           lacus. Turpis egestas pretium aenean pharetra magna ac.
-  img5: ../img/img-05.jpg
-  img6: ../img/mountainAll.png
-  img7: ../img/img-07.jpg
+  img5: ../img/Seven.png
+  img6: ../img/One.png
+  img7: ../img/Six.png
   logo01: ../img/logo-01.png
   logo02: ../img/logo-02.png
   logo03: ../img/logo-03.png
