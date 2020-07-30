@@ -10,12 +10,12 @@ const pricingSection = ({ title, cards, description, color }) => {
     icon = "fas fa-palette";
   }
   return (
-    <div>
-      <div className="col-md-8 col-md-offset-2 text-center white-text-container">
+    <div className="text-center ">
+      <div className="col-md-8 col-md-offset-2 white-text-container">
         <h2>{title}</h2>
       </div>
       <i
-        className={`${icon} col-md-8 col-md-offset-2 text-center white-text-container pricing-icon`}
+        className={`${icon} col-md-8 col-md-offset-2  white-text-container pricing-icon`}
       ></i>
       <div className="row">
         {cards.map((obj) => {
@@ -33,7 +33,7 @@ const pricingSection = ({ title, cards, description, color }) => {
         })}
       </div>
       <br />
-      <div className="col-md-8 col-md-offset-2 text-center white-text-container">
+      <div className="col-md-8 col-md-offset-2 white-text-container">
         <p>{description}</p>
       </div>
     </div>
