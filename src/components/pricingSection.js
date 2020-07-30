@@ -1,6 +1,6 @@
 import React from "react";
 import PricingCard from "./pricingCard";
-const pricingSection = ({ title, cards, description,  color }) => {
+const pricingSection = ({ title, cards, description, color }) => {
   var icon;
   if (title === "Web Development") {
     icon = "fas fa-laptop-code";
@@ -14,7 +14,9 @@ const pricingSection = ({ title, cards, description,  color }) => {
       <div className="col-md-8 col-md-offset-2 text-center white-text-container">
         <h2>{title}</h2>
       </div>
-      <i className={`${icon} col-md-8 col-md-offset-2 text-center white-text-container pricing-icon`}></i>
+      <i
+        className={`${icon} col-md-8 col-md-offset-2 text-center white-text-container pricing-icon`}
+      ></i>
       <div className="row">
         {cards.map((obj) => {
           return (
