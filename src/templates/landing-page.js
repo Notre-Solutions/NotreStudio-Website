@@ -10,67 +10,67 @@ const Landing = ({ data }) => {
   const { img6, img5, img7 } = data.markdownRemark.frontmatter.landingPage;
 
   // this is to target the element you want to animate
-  const sectionRef = useRef(null);
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 1,
-  });
+  // const sectionRef = useRef(null);
+  // const intersection = useIntersection(sectionRef, {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 1,
+  // });
 
-  const sectionRef2 = useRef(null);
-  const intersection2 = useIntersection(sectionRef2, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  });
+  // const sectionRef2 = useRef(null);
+  // const intersection2 = useIntersection(sectionRef2, {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 0.5,
+  // });
 
-  const fadeInX = (element) => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      x: 0,
-      ease: "power4.out",
-      stagger: {
-        amount: 0.3,
-      },
-    });
-  };
+  // const fadeInX = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 1,
+  //     x: 0,
+  //     ease: "power4.out",
+  //     stagger: {
+  //       amount: 0.3,
+  //     },
+  //   });
+  // };
 
-  const fadeOutX = (element) => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      x: 60,
-      ease: "power4.out",
-    });
-  };
+  // const fadeOutX = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 0,
+  //     x: 60,
+  //     ease: "power4.out",
+  //   });
+  // };
 
-  const fadeInY = (element) => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      y: -10,
-      ease: "power4.out",
-      stagger: {
-        amount: 0.3,
-      },
-    });
-  };
+  // const fadeInY = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 1,
+  //     y: -10,
+  //     ease: "power4.out",
+  //     stagger: {
+  //       amount: 0.3,
+  //     },
+  //   });
+  // };
 
-  const fadeOutY = (element) => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      y: 0,
-      ease: "power4.out",
-    });
-  };
+  // const fadeOutY = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 0,
+  //     y: 0,
+  //     ease: "power4.out",
+  //   });
+  // };
 
-  intersection2 && intersection2.intersectionRatio < 0.5
-    ? // Not reached
-      fadeOutX(".fadeIn2")
-    : fadeInX(".fadeIn2"); // reached soi animate
+  // intersection2 && intersection2.intersectionRatio < 0.5
+  //   ? // Not reached
+  //     fadeOutX(".fadeIn2")
+  //   : fadeInX(".fadeIn2"); // reached soi animate
 
-  intersection && intersection.intersectionRatio < 1
-    ? // Not reached
-      fadeOutY(".fadeIn")
-    : fadeInY(".fadeIn"); // reached soi animate
+  // intersection && intersection.intersectionRatio < 1
+  //   ? // Not reached
+  //     fadeOutY(".fadeIn")
+  //   : fadeInY(".fadeIn"); // reached soi animate
 
   return (
     <Layout current="landing">
@@ -166,7 +166,7 @@ const Landing = ({ data }) => {
       </div>
 
       <div
-        ref={sectionRef}
+        // ref={sectionRef}
         className="section-container background-color-container white-text-container"
       >
         <div className="container">
@@ -195,7 +195,10 @@ const Landing = ({ data }) => {
         </div>
       </div>
 
-      <div className="section-container" ref={sectionRef2}>
+      <div
+        className="section-container"
+        // ref={sectionRef2}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-7">
