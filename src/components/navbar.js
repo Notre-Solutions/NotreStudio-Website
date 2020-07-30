@@ -1,12 +1,9 @@
 import React from "react";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import classnames from "classnames";
 import Logo from "../img/fullLogo.inline.svg";
-import Img from "gatsby-image";
 import gsap from "gsap";
-import TransitionLink, {
-  TransitionPortal,
-} from "gatsby-plugin-transition-link";
+import TransitionLink from "gatsby-plugin-transition-link";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 class navbar extends React.Component {
@@ -56,6 +53,7 @@ class navbar extends React.Component {
   }
 
   render() {
+    console.log(this.props.current);
     return (
       <>
         <header>
@@ -85,41 +83,21 @@ class navbar extends React.Component {
                 })}
                 id="navbar-collapse-uarr"
               >
-                {/* <StaticQuery
-                  query={graphql`
-                    query HeaderPic {
-                      file(relativePath: { eq: "Notre Studio2-02.png" }) {
-                        childImageSharp {
-                          fluid(maxWidth: 10000, quality: 100) {
-                            ...GatsbyImageSharpFluid
-                          }
-                        }
-                      }
-                    }
-                  `}
-                  render={(data) => (
-                    <Link to="/" className="active home-img">
-                      <Img
-                        className="img-responsive page-base-image"
-                        alt=""
-                        fluid={data.file.childImageSharp.fluid}
-                      />
-                    </Link>
-                  )}
-                /> */}
                 <ul className="nav navbar-nav navbar-right">
                   <li
                     className={classnames("", {
                       "dropdown active": this.state.active,
                     })}
                   >
-                    <AniLink to="/" className="active">
+                    <AniLink
+                      to="/"
+                      className={classnames("", {
+                        current: this.props.current === "landing",
+                      })}
+                    >
                       Home
                     </AniLink>
                   </li>
-                  {/* <li>
-                    <Link to="/about"> About</Link>
-                  </li> */}
                   <li>
                     <TransitionLink
                       to="/about"
@@ -133,18 +111,24 @@ class navbar extends React.Component {
                         delay: 0.5,
                         trigger: ({ entry, node }) => this.test(entry, node),
                       }}
+                      className={classnames("", {
+                        current: this.props.current === "about",
+                      })}
                     >
                       About
                     </TransitionLink>
                   </li>
                   <li>
-                    <AniLink cover to="/pricing">
+                    <AniLink
+                      cover
+                      to="/pricing"
+                      className={classnames("", {
+                        current: this.props.current === "pricing",
+                      })}
+                    >
                       Pricing
                     </AniLink>
                   </li>
-                  {/* <li>
-                    <Link to="/pricing"> Pricing </Link>
-                  </li> */}
                   <li>
                     <TransitionLink
                       to="/contact"
@@ -158,26 +142,23 @@ class navbar extends React.Component {
                         delay: 0.5,
                         trigger: ({ entry, node }) => this.test(entry, node),
                       }}
+                      className={classnames("", {
+                        current: this.props.current === "contact",
+                      })}
                     >
                       Contact
                     </TransitionLink>
                   </li>
                   <li>
-                    <TransitionLink to="/projects">Projects</TransitionLink>
+                    <TransitionLink
+                      to="/projects"
+                      className={classnames("", {
+                        current: this.props.current === "projects",
+                      })}
+                    >
+                      Projects
+                    </TransitionLink>
                   </li>
-                  {/* <li>
-                    <Link to="/components">Components</Link>
-                  </li> */}
-                  {/* <li>
-                    <p>
-                      <Link
-                        to="/download"
-                        className="btn btn-primary navbar-btn"
-                      >
-                        Download
-                      </Link>
-                    </p>
-                  </li> */}
                 </ul>
               </div>
             </div>

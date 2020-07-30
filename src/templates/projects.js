@@ -75,7 +75,7 @@ const projects = ({ data }) => {
   } = data.markdownRemark.frontmatter.projectsPage;
 
   return (
-    <Layout current="pricing">
+    <Layout current="projects">
       <div className="page-padding">
         <div className="container">
           <div className="row ">
