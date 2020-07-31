@@ -22,12 +22,13 @@ const contact = ({ data }) => {
                 <div className="col-md-6">
                   <h3>Contact Us</h3>
                   <form
-                    name="contact"
+                    name="contact-form-netlify"
+                    enctype="application/x-www-form-urlencoded"
                     method="POST"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     className="reveal-content contact-form"
-                    action="contact"
+                    action="/contact"
                   >
                     <div className="form-group">
                       <p className="hidden">
