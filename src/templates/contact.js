@@ -23,14 +23,22 @@ const contact = ({ data }) => {
                   <h3>Contact Us</h3>
                   <form
                     name="contact"
-                    netlify
+                    method="POST"
+                    netlify-honeypot="bot-field"
+                    data-netlify="true"
                     className="reveal-content contact-form"
                   >
                     <div className="form-group">
+                      <p className="hidden">
+                        <label>
+                          Don’t fill this out if you're human:{" "}
+                          <input name="bot-field" />
+                        </label>
+                      </p>
                       <input
                         type="name"
+                        name="name"
                         className="form-control"
-                        id="name"
                         placeholder="Full name"
                       />
                     </div>
@@ -38,7 +46,7 @@ const contact = ({ data }) => {
                       <input
                         type="email"
                         className="form-control"
-                        id="email"
+                        name="email"
                         placeholder="Email"
                       />
                     </div>
@@ -46,7 +54,7 @@ const contact = ({ data }) => {
                       <input
                         type="text"
                         className="form-control"
-                        id="subject"
+                        name="subject"
                         placeholder="Subject"
                       />
                     </div>
@@ -54,6 +62,7 @@ const contact = ({ data }) => {
                       <textarea
                         className="form-control"
                         rows={3}
+                        name="message"
                         placeholder="Enter your message"
                       ></textarea>
                     </div>
