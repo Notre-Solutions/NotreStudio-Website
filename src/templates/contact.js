@@ -27,6 +27,7 @@ const contact = ({ data }) => {
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     className="reveal-content contact-form"
+                    action="/contact"
                   >
                     <div className="form-group">
                       <p className="hidden">
