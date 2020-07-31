@@ -21,7 +21,11 @@ const contact = ({ data }) => {
               <div className="row">
                 <div className="col-md-6">
                   <h3>Contact Us</h3>
-                  <form action="" className="reveal-content contact-form">
+                  <form
+                    name="contact"
+                    netlify
+                    className="reveal-content contact-form"
+                  >
                     <div className="form-group">
                       <input
                         type="name"

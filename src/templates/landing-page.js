@@ -191,7 +191,7 @@ const Landing = ({ data }) => {
                   cursus metus aliquam eleifend mi.{" "}
                 </p>
                 <Link
-                  href="/projects"
+                  to="/projects"
                   title=""
                   className="btn btn-primary btn-lg fadeIn"
                 >
