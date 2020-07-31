@@ -25,26 +25,28 @@ const pricing = ({ data }) => {
                 </div>
               </div>
             </div>
-            <PricingSection
-              title={webDev.title}
-              cards={webDev.cards}
-              description={webDev.description}
-              color={webDev.color}
-            />
-            <br />
-            <PricingSection
-              title={hosting.title}
-              cards={hosting.cards}
-              description={hosting.description}
-              color={hosting.color}
-            />
-            <br />
-            <PricingSection
-              title={webDesign.title}
-              cards={webDesign.cards}
-              description={webDesign.description}
-              color={webDesign.color}
-            />
+            <div className="row section-container-spacer padding-top">
+              <PricingSection
+                title={webDev.title}
+                cards={webDev.cards}
+                description={webDev.description}
+                color={webDev.color}
+              />
+              <br />
+              <PricingSection
+                title={hosting.title}
+                cards={hosting.cards}
+                description={hosting.description}
+                color={hosting.color}
+              />
+              <br />
+              <PricingSection
+                title={webDesign.title}
+                cards={webDesign.cards}
+                description={webDesign.description}
+                color={webDesign.color}
+              />
+            </div>
           </div>
         </div>
       </div>

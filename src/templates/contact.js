@@ -20,6 +20,7 @@ const contact = ({ data }) => {
             <div className="col-xs-12">
               <div className="row">
                 <div className="col-md-6">
+                  <h3>Contact Us</h3>
                   <form action="" className="reveal-content contact-form">
                     <div className="form-group">
                       <input

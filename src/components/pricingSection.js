@@ -17,6 +17,9 @@ const pricingSection = ({ title, cards, description, color }) => {
       <i
         className={`${icon} col-md-8 col-md-offset-2  white-text-container pricing-icon`}
       ></i>
+      <div className="col-md-8 col-md-offset-2 white-text-container">
+        <p>{description}</p>
+      </div>
       <div className="row">
         {cards.map((obj) => {
           return (
@@ -33,9 +36,6 @@ const pricingSection = ({ title, cards, description, color }) => {
         })}
       </div>
       <br />
-      <div className="col-md-8 col-md-offset-2 white-text-container">
-        <p>{description}</p>
-      </div>
     </div>
   );
 };

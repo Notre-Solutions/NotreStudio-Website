@@ -262,7 +262,7 @@ const Landing = ({ data }) => {
 
               <div className="arrow">
                 <Arrow />
-                <span className="arrow-text">Start a Project</span>
+                <span className="arrow-text">Create a Website</span>
               </div>
             </div>
           </div>

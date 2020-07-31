@@ -79,7 +79,7 @@ const projects = ({ data }) => {
       <div className="page-padding">
         <div className="container">
           <div className="row ">
-            <div className="col-lg-8 col-lg-offset-2 ">
+            <div className="col-lg-6 col-lg-offset-3 ">
               <Img
                 className="img-responsive"
                 alt=""

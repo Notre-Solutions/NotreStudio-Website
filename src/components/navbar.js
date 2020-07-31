@@ -100,6 +100,16 @@ class navbar extends React.Component {
                   </li>
                   <li>
                     <TransitionLink
+                      to="/projects"
+                      className={classnames("", {
+                        current: this.props.current === "projects",
+                      })}
+                    >
+                      Projects
+                    </TransitionLink>
+                  </li>
+                  <li>
+                    <TransitionLink
                       to="/about"
                       exit={{
                         length: 1,
@@ -147,16 +157,6 @@ class navbar extends React.Component {
                       })}
                     >
                       Contact
-                    </TransitionLink>
-                  </li>
-                  <li>
-                    <TransitionLink
-                      to="/projects"
-                      className={classnames("", {
-                        current: this.props.current === "projects",
-                      })}
-                    >
-                      Projects
                     </TransitionLink>
                   </li>
                 </ul>
