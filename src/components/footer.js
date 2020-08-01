@@ -70,7 +70,9 @@ const CustomForm = ({ status, message, onValidated }) => {
         >
           <div className="emoji fas fa-check-circle"></div>
           <h1 className="text-center">Awesome!</h1>
-          <h4 style={{ color: "black" }}>{message}</h4>
+          <h4 style={{ color: "black" }}>
+            {message} Thank you for subscribing!
+          </h4>
           <button
             className="btn btn-default btn-lrg text-center"
             onClick={() => setOpen(false)}

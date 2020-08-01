@@ -306,27 +306,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          logo01 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          logo02 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          logo03 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
         }
       }
     }

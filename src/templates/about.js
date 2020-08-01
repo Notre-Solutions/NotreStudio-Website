@@ -46,7 +46,7 @@ const about = ({ data }) => {
                 {team.members.map((member) => {
                   return (
                     <>
-                      <div className="col-md-6">
+                      <div className="col-md-6 padding-top">
                         <Img
                           className="img-responsive member"
                           alt=""
@@ -101,20 +101,6 @@ export const pageQuery = graphql`
             }
           }
           hero {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          bodyImageLeft {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          bodyImageRight {
             childImageSharp {
               fluid(maxWidth: 10000, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
