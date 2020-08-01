@@ -72,25 +72,25 @@ export default function footer() {
                 </div>
                 <p>
                   <a
-                    href="https://facebook.com/"
+                    href="https://www.facebook.com/The-Notre-Studio-103423314807167/"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
                     <i className="fab fa-facebook" aria-hidden="true"></i>
                   </a>
                   <a
-                    href="https://twitter.com/"
+                    href="https://twitter.com/thenotrestudio"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
                     <i className="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.instagram.com/thenotrestudio/"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
-                    <i className="fab fa-linkedin" aria-hidden="true"></i>
+                    <i className="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </p>
               </div>

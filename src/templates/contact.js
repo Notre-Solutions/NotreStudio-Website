@@ -23,19 +23,18 @@ const contact = ({ data }) => {
                   <h3>Contact Us</h3>
                   <form
                     name="contact-form-netlify"
-                    enctype="application/x-www-form-urlencoded"
                     method="POST"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     className="reveal-content contact-form"
-                    action="/contact"
                   >
                     <div className="form-group">
                       <p className="hidden">
-                        <label>
-                          Don’t fill this out if you're human:{" "}
-                          <input name="bot-field" />
-                        </label>
+                        <input
+                          type="hidden"
+                          name="form-name"
+                          value="contact-form-netlify"
+                        />
                       </p>
                       <input
                         type="name"
