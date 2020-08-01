@@ -76,20 +76,6 @@ const projects = ({ data }) => {
 
   return (
     <Layout current="projects">
-      <div className="page-padding">
-        <div className="container">
-          <div className="row ">
-            <div className="col-lg-6 col-lg-offset-3 ">
-              <Img
-                className="img-responsive"
-                alt=""
-                fluid={hero.childImageSharp.fluid}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="section-container">
         <div className="container">
           <div className="row">
