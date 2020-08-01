@@ -7,16 +7,17 @@ aboutPage:
     paragraph: >-
       Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
     members:
-      - name: Nyasha
-        job: CEO, Web Designer
-        img: ../../img/img-03.jpg
-        message: >-
-          Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. Turpis egestas pretium aenean pharetra magna ac.
       - name: Stephen
         job: CEO, Web Designer
-        img: ../../img/img-02.jpg
+        img: ../../img/Ste.JPG
         message: >-
           Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. Turpis egestas pretium aenean pharetra magna ac.
+      - name: Nyasha
+        job: CEO, Web Designer
+        img: ../../img/Nyasha.jpeg
+        message: >-
+          Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. Turpis egestas pretium aenean pharetra magna ac.
+      
   paragraph1: >-
     Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. Turpis egestas pretium aenean pharetra magna ac. Id cursus metus aliquam eleifend mi. Odio tempor orci dapibus ultrices in iaculis. Lacus luctus accumsan tortor posuere ac ut consequat semper. Tincidunt ornare massa eget egestas purus viverra accumsan. Odio euismod lacinia at quis. Sit amet nulla facilisi morbi. At varius vel pharetra vel turpis nunc eget lorem dolor. Feugiat vivamus at augue eget. Feugiat nisl pretium fusce id velit ut. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Ut placerat orci nulla pellentesque. Laoreet suspendisse interdum consectetur libero id.
   paragraph2: >-
