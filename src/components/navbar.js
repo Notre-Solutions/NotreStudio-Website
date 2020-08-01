@@ -128,17 +128,7 @@ class navbar extends React.Component {
                       About
                     </TransitionLink>
                   </li>
-                  <li>
-                    <AniLink
-                      cover
-                      to="/pricing"
-                      className={classnames("", {
-                        current: this.props.current === "pricing",
-                      })}
-                    >
-                      Pricing
-                    </AniLink>
-                  </li>
+
                   <li>
                     <TransitionLink
                       to="/contact"
@@ -158,6 +148,19 @@ class navbar extends React.Component {
                     >
                       Contact
                     </TransitionLink>
+                  </li>
+                  <li>
+                    <p>
+                      <AniLink
+                        cover
+                        to="/pricing"
+                        className={classnames("btn btn-primary navbar-btn", {
+                          current: this.props.current === "pricing",
+                        })}
+                      >
+                        PRICING
+                      </AniLink>
+                    </p>
                   </li>
                 </ul>
               </div>
