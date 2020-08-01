@@ -90,7 +90,7 @@ export default function footer() {
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
-                    <i className="fab fa-linkedin" aria-hidden="true"></i>
+                    <i className="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </p>
               </div>
