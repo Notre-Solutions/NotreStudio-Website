@@ -30,7 +30,6 @@ const about = ({ data }) => {
           <ScrollDown />
         </div>
       </div>
-
       <div className="section-container">
         <div className="container">
           <div className="row">
@@ -38,7 +37,6 @@ const about = ({ data }) => {
               <div className="text-center" id="team">
                 <h1>{title}</h1>
               </div>
-
               <p className="section-container-spacer">{paragraph1}</p>
               <div className="text-center padding-top">
                 <h1>{team.title}</h1>

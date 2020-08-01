@@ -6387,3 +6387,28 @@ button.close {
 .contact-heading {
   color: $border_color_9 !important;
 }
+
+.customModal {
+  h1 {
+    color: black;
+  }
+  text-align: center;
+  border-radius: 1rem;
+  color: black;
+  max-width: 300px;
+  max-height: 400px;
+  height: 50%;
+  width: 30%;
+  .btn {
+    color: white;
+    font-size: 2rem;
+    background: $color_19;
+    padding: 0 4rem 0 4rem;
+    margin-top: 2rem;
+  }
+  .emoji {
+    color: $color_19;
+    font-size: 7rem;
+    margin: 3rem 0 -1rem 0;
+  }
+}
