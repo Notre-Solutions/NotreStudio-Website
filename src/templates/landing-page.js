@@ -262,7 +262,13 @@ const Landing = ({ data }) => {
 
               <div className="arrow">
                 <Arrow />
-                <span className="arrow-text">Create a Website</span>
+                <a
+                  href="https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e"
+                  target="_blank"
+                  className="arrow-text"
+                >
+                  Create a Website
+                </a>
               </div>
             </div>
           </div>

@@ -5983,9 +5983,15 @@ button.close {
 .arrow {
   position: relative;
   &-text {
+    transition: all 0.5s;
     position: absolute;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-left: 20px;
+    color: white !important;
+  }
+  &-text:hover {
+    text-decoration: none;
+    transform: scale(1.1);
   }
 }
 .pricing-icon {

@@ -93,7 +93,6 @@ const projects = ({ data }) => {
                 Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum
                 dolor sit amet consectetur adipiscing elit.
               </p>
-              <small className="signature pull-right">Nyasha & Stephen</small>
             </div>
           </div>
         </div>
