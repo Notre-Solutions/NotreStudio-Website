@@ -4,6 +4,18 @@ import Layout from "../components/layout";
 const contact = () => {
   return (
     <Layout current="contact">
+      <div className="section-container">
+        <div className="container">
+          <div className="row text-center">
+            <p className="contact-heading">GOT A QUESTION?</p>
+            <h1>Contact Notre Studio</h1>
+            <p className="col-xs-4 col-xs-offset-4">
+              We are here to help and answer any questions you might have. We
+              look forward to hearing from you &#128513;
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="section-container no-padding">
         <div className="container">
           <div className="row">
