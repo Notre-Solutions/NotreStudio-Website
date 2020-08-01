@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import ScrollDown from "../components/ScrollDown";
 
 const about = ({ data }) => {
   const {
@@ -10,8 +11,6 @@ const about = ({ data }) => {
     paragraph2,
     hero,
     team,
-    bodyImageLeft,
-    bodyImageRight,
     signature,
   } = data.markdownRemark.frontmatter.aboutPage;
   console.log(data);
@@ -39,11 +38,11 @@ const about = ({ data }) => {
                 <h1>{title}</h1>
               </div>
               <p className="section-container-spacer">{paragraph1}</p>
-              <div className="text-center padding-top">
+              <ScrollDown />
+              <div className="text-center padding-top" id="team">
                 <h1>{team.title}</h1>
               </div>
-
-              <div className="row section-container-spacer text-center ">
+              <div className="row section-container-spacer text-center">
                 <p>{team.paragraph}</p>
                 {team.members.map((member) => {
                   return (
@@ -54,7 +53,6 @@ const about = ({ data }) => {
                           alt=""
                           fluid={member.img.childImageSharp.fluid}
                         />
-
                         <h4>{member.name}</h4>
                         <h3>{member.job}</h3>
                         <p>{member.message}</p>

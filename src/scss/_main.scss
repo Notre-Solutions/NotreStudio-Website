@@ -6353,3 +6353,22 @@ button.close {
 .current {
   color: white !important;
 }
+
+.ctn-icon:hover,
+.ctn-icon:focus,
+.ctn-icon:active {
+  scale: (1.1);
+}
+
+.ctn-icon {
+  animation: jump-arrow 2.5s infinite;
+  bottom: 0;
+  margin-left: calc(50% - 1.25rem);
+  right: 4rem;
+  color: #ffffff;
+  display: block;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-align: center;
+  transform: translatex(-50%);
+}
