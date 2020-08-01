@@ -12,14 +12,14 @@ const contact = ({ data }) => {
       <div className="section-container no-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12">
+            {/* <div className="col-xs-12">
               <div id="map">
                 <Map />
               </div>
-            </div>
+            </div> */}
             <div className="col-xs-12">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-8 col-md-offset-2">
                   <h3>Contact Us</h3>
                   <form
                     name="contact-form-netlify"
@@ -72,7 +72,7 @@ const contact = ({ data }) => {
                     </button>
                   </form>
                 </div>
-
+                {/* 
                 <div className="col-md-5 col-md-offset-1">
                   <h3>{contactForm.location}</h3>
 
@@ -96,7 +96,7 @@ const contact = ({ data }) => {
                   <div>
                     <p>{employment.description}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
