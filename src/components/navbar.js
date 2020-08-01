@@ -79,7 +79,7 @@ class navbar extends React.Component {
 
               <div
                 className={classnames("collapse navbar-collapse", {
-                  "collapse in": this.state.active,
+                  "collapse in nav-animation": this.state.active,
                 })}
                 id="navbar-collapse-uarr"
               >

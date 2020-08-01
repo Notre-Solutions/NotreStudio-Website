@@ -37,9 +37,9 @@ const pricingCard = ({
                 <span>{`${currency}${amount}/${period}`}</span>
               </p>
             </div>
-            <Link to={`/${to}`} className="btn btn-primary" title="">
+            <a href={`${to}`} target='_blank' className="btn btn-primary" title="">
               Subscribe
-            </Link>
+            </a>
           </div>
         </div>
       </div>

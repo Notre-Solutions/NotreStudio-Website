@@ -40,12 +40,12 @@ const pricing = ({ data }) => {
                 color={hosting.color}
               />
               <br />
-              <PricingSection
+              {/* <PricingSection
                 title={webDesign.title}
                 cards={webDesign.cards}
                 description={webDesign.description}
                 color={webDesign.color}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
               amount
               currency
               period
+              to
               features {
                 feature
               }
@@ -85,6 +86,7 @@ export const pageQuery = graphql`
               amount
               currency
               period
+              to
               features {
                 feature
               }
@@ -98,6 +100,7 @@ export const pageQuery = graphql`
               title
               amount
               currency
+              to
               period
               features {
                 feature
