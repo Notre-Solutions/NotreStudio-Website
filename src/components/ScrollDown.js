@@ -38,7 +38,7 @@ export default class ScrollDown extends Component {
   render() {
     if (!this.state.visible) {
       return (
-        <AnchorLink className="ctn-icon" href="#team" offset={() => 50}>
+        <AnchorLink className="ctn-icon" href="#team" offset={() => 200}>
           <i class="fa fa-angle-down" aria-hidden="true"></i>
         </AnchorLink>
       );

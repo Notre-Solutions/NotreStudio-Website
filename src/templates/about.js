@@ -27,19 +27,20 @@ const about = ({ data }) => {
               />
             </div>
           </div>
+          <ScrollDown />
         </div>
       </div>
 
       <div className="section-container">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-8 col-md-offset-2 margin-top-remove">
-              <div className="text-center">
+            <div className="col-xs-12 col-md-8 col-md-offset-2 ">
+              <div className="text-center" id="team">
                 <h1>{title}</h1>
               </div>
+
               <p className="section-container-spacer">{paragraph1}</p>
-              <ScrollDown />
-              <div className="text-center padding-top" id="team">
+              <div className="text-center padding-top">
                 <h1>{team.title}</h1>
               </div>
               <div className="row section-container-spacer text-center">
@@ -49,7 +50,7 @@ const about = ({ data }) => {
                     <>
                       <div className="col-md-6">
                         <Img
-                          className="img-responsive"
+                          className="img-responsive member"
                           alt=""
                           fluid={member.img.childImageSharp.fluid}
                         />

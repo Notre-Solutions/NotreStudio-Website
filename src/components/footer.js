@@ -73,6 +73,7 @@ export default function footer() {
                 <p>
                   <a
                     href="https://www.facebook.com/The-Notre-Studio-103423314807167/"
+                    target="_blank"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
@@ -80,6 +81,7 @@ export default function footer() {
                   </a>
                   <a
                     href="https://twitter.com/thenotrestudio"
+                    target="_blank"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
@@ -87,6 +89,7 @@ export default function footer() {
                   </a>
                   <a
                     href="https://www.instagram.com/thenotrestudio/"
+                    target="_blank"
                     className="social-round-icon white-round-icon fa-icon"
                     title=""
                   >
