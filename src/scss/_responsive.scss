@@ -1,4 +1,21 @@
 @media (min-width: 995px) {
+  .ctn-icon:hover,
+  .ctn-icon:focus,
+  .ctn-icon:active {
+    transform: scale(1.1);
+  }
+
+  .ctn-icon {
+    animation: jump-arrow 2.5s infinite;
+    bottom: 0;
+    margin-left: 50%;
+    color: #ffffff;
+    display: block;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: center;
+    transform: translatex(-50%);
+  }
   .website-picture-links {
     cursor: pointer;
     position: relative;

@@ -5988,9 +5988,15 @@ button.close {
 .arrow {
   position: relative;
   &-text {
+    transition: all 0.5s;
     position: absolute;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-left: 20px;
+    color: white !important;
+  }
+  &-text:hover {
+    text-decoration: none;
+    transform: scale(1.1);
   }
 }
 .pricing-icon {
@@ -6357,4 +6363,41 @@ button.close {
 
 .current {
   color: white !important;
+}
+
+.ctn-icon {
+  display: none;
+}
+
+.member {
+  height: 35rem;
+  border-radius: 100%;
+}
+
+.contact-heading {
+  color: $border_color_9 !important;
+}
+
+.customModal {
+  h1 {
+    color: black;
+  }
+  text-align: center;
+  border-radius: 1rem;
+  color: black;
+  width: 300px;
+  height: 350px;
+
+  .btn {
+    color: white;
+    font-size: 2rem;
+    background: $color_19;
+    padding: 0 4rem 0 4rem;
+    margin-top: 2rem;
+  }
+  .emoji {
+    color: $color_19;
+    font-size: 7rem;
+    margin: 3rem 0 -1rem 0;
+  }
 }

@@ -262,7 +262,13 @@ const Landing = ({ data }) => {
 
               <div className="arrow">
                 <Arrow />
-                <span className="arrow-text">Create a Website</span>
+                <a
+                  href="https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e"
+                  target="_blank"
+                  className="arrow-text"
+                >
+                  Create a Website
+                </a>
               </div>
             </div>
           </div>
@@ -294,27 +300,6 @@ export const pageQuery = graphql`
             }
           }
           img7 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          logo01 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          logo02 {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          logo03 {
             childImageSharp {
               fluid(maxWidth: 10000, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64

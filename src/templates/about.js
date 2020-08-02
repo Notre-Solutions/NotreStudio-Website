@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import ScrollDown from "../components/ScrollDown";
 
 const about = ({ data }) => {
   const {
@@ -10,8 +11,6 @@ const about = ({ data }) => {
     paragraph2,
     hero,
     team,
-    bodyImageLeft,
-    bodyImageRight,
     signature,
   } = data.markdownRemark.frontmatter.aboutPage;
   console.log(data);
@@ -28,33 +27,31 @@ const about = ({ data }) => {
               />
             </div>
           </div>
+          <ScrollDown />
         </div>
       </div>
-
       <div className="section-container">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-8 col-md-offset-2 margin-top-remove">
-              <div className="text-center">
+            <div className="col-xs-12 col-md-8 col-md-offset-2 ">
+              <div className="text-center" id="team">
                 <h1>{title}</h1>
               </div>
               <p className="section-container-spacer">{paragraph1}</p>
               <div className="text-center padding-top">
                 <h1>{team.title}</h1>
               </div>
-
-              <div className="row section-container-spacer text-center ">
+              <div className="row section-container-spacer text-center">
                 <p>{team.paragraph}</p>
                 {team.members.map((member) => {
                   return (
                     <>
-                      <div className="col-md-6">
+                      <div className="col-md-6 padding-top">
                         <Img
-                          className="img-responsive"
+                          className="img-responsive member"
                           alt=""
                           fluid={member.img.childImageSharp.fluid}
                         />
-
                         <h4>{member.name}</h4>
                         <h3>{member.job}</h3>
                         <p>{member.message}</p>
@@ -104,20 +101,6 @@ export const pageQuery = graphql`
             }
           }
           hero {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          bodyImageLeft {
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-              }
-            }
-          }
-          bodyImageRight {
             childImageSharp {
               fluid(maxWidth: 10000, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
