@@ -1,5 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
+
+function packagePrice(period, amount, currency) {
+  if (period == "none") {
+    return <span>{`${currency}${amount}`}</span>;
+  } else {
+    return <span>{`${currency}${amount}/${period}`}</span>;
+  }
+}
+
 const pricingCard = ({
   title,
   amount,
@@ -34,10 +42,16 @@ const pricingCard = ({
             <div class="card__price-box">
               <p class="card__price-only">Only</p>
               <p class="card__price-value">
-                <span>{`${currency}${amount}/${period}`}</span>
+                {packagePrice(period, amount, currency)}
+                {/* <span>{`${currency}${amount}/${period}`}</span> */}
               </p>
             </div>
-            <a href={`${to}`} target='_blank' className="btn btn-primary" title="">
+            <a
+              href={`${to}`}
+              target="_blank"
+              className="btn btn-primary"
+              title=""
+            >
               Subscribe
             </a>
           </div>

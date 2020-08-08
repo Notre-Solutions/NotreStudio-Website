@@ -10,19 +10,19 @@ pricingPage:
       Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sit amet risus nullam eget felis eget. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet facilisis magna etiam tempor orci eu. Eleifend mi in nulla posuere. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
     color: 1
     cards: 
-      - title: Personal
-        amount: 18
+      - title: Basic
+        amount: 40
         currency: £
-        period: MO
+        period: none
         features:
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Professional
-        amount: 28
+        amount: 120
         currency: £
-        period: MO
+        period: none
         features:
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         - feature: Gravida arcu ac tortor dignissim convallis aenean
@@ -30,9 +30,9 @@ pricingPage:
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Business
-        amount: 48
+        amount: 241
         currency: £
-        period: MO
+        period: none
         features:
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         - feature: Gravida arcu ac tortor 
@@ -67,7 +67,7 @@ pricingPage:
         - feature: Gravida arcu ac tortor 
         - feature: Gravida arcu ac tortor dignissim convallis aenean
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
-      - title: 3 Month
+      - title: 12 Month
         amount: 113
         currency: £
         period: MO
