@@ -88,10 +88,7 @@ const projects = ({ data }) => {
 
             <div className="col-xs-12 col-md-8 col-md-offset-2">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum
-                dolor sit amet consectetur adipiscing elit.
+                "Here at inship we pride ourselves on quality customer service and delivery. Notre Studio was able to provide us with the same but in addition a maticulously detail oriented process. We could not be happier with our website and look forward to our revamp with the studio soon" - InShip Director
               </p>
             </div>
           </div>
