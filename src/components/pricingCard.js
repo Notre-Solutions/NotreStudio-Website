@@ -11,17 +11,17 @@ const pricingCard = ({
 }) => {
   return (
     <div className="col-md-4">
-      <div class="card">
-        <div class="card__side card__side--front">
-          <div class={`card__picture card__picture-${primaryColor}`}>
+      <div className="card">
+        <div className="card__side card__side--front">
+          <div className={`card__picture card__picture-${primaryColor}`}>
             &nbsp;
           </div>
-          <h4 class="card__heading ">
-            <span class="card__heading-span card__heading-span--1">
+          <h4 className="card__heading ">
+            <span className="card__heading-span card__heading-span--1">
               {title}
             </span>
           </h4>
-          <div class="card__details">
+          <div className="card__details">
             <ul>
               {features.map((obj) => {
                 return <li>{obj.feature}</li>;
@@ -29,12 +29,13 @@ const pricingCard = ({
             </ul>
           </div>
         </div>
-        <div class="card__side card__side--back card__side--back-1">
-          <div class="card__cta">
-            <div class="card__price-box">
-              <p class="card__price-only">Only</p>
-              <p class="card__price-value">
-                <span>{`${currency}${amount}/${period}`}</span>
+        <div className="card__side card__side--back card__side--back-1">
+          <div className="card__cta">
+            <div className="card__price-box">
+              {/* <p className="card__price-only">Only</p> */}
+              <p className="card__price-value">
+                <span>{`${currency}${amount}`}</span>
+                {/* <span>{`${currency}${amount}/${period}`}</span> */}
               </p>
             </div>
             <a href={`${to}`} target='_blank' className="btn btn-primary" title="">
