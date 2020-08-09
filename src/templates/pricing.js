@@ -16,21 +16,22 @@ const pricing = ({ data }) => {
         <div className="section-container">
           <div className="container">
             <div className="row section-container-spacer">
-              <div className="col-xs-12">
-                <div className="text-center white-text-container">
+              {/* <div className="col-xs-12"> */}
+              {/* <div className="text-center white-text-container">
                   <h1>{title}</h1>
-                </div>
-                <div className="col-md-8 col-md-offset-2 text-center white-text-container">
+                </div> */}
+              {/* <div className="col-md-8 col-md-offset-2 text-center white-text-container">
                   <p>{description}</p>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
-            <div className="row section-container-spacer padding-top">
+            <div className="row section-container-spacer">
               <PricingSection
                 title={webDev.title}
                 cards={webDev.cards}
                 description={webDev.description}
                 color={webDev.color}
+                button={webDev.button}
               />
               <br />
               <PricingSection
@@ -38,6 +39,7 @@ const pricing = ({ data }) => {
                 cards={hosting.cards}
                 description={hosting.description}
                 color={hosting.color}
+                button={hosting.button}
               />
               <br />
               {/* <PricingSection
@@ -66,6 +68,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount
@@ -81,6 +84,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount
@@ -96,6 +100,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount

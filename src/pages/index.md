@@ -3,10 +3,7 @@ templateKey: landing-page
 landingPage:
   title: Posuere lorem Ipsum
   paragraph: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum
-    dolor sit amet consectetur adipiscing elit.
+    Our skilled team of product developers and consultants can support you from initial planning all the way through to launch and delivery with a robust Agile development methodology.
   button: Download
   cards:
     title: Vivamus laoreet

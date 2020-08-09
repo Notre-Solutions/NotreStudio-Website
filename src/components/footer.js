@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../img/logo.inline.svg";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Modal from "react-responsive-modal";
-
+import { Link } from "gatsby";
 const url =
   "https://notre-studio.us17.list-manage.com/subscribe/post?u=950b2550aa583dda30d47ad41&amp;id=dc8bd5abf1";
 
@@ -93,10 +93,11 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-4">
-                <h4>About us</h4>
+                <Link to="/about">About us</Link>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  sit amet consectetur dolor
+                  We are a team of software engineers. We have been working in
+                  this industry for over 8 years. We will not stop until we make
+                  you your perfect website.
                 </p>
               </div>
               <div className="col-md-4 text-center">

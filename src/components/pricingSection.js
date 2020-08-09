@@ -1,6 +1,6 @@
 import React from "react";
 import PricingCard from "./pricingCard";
-const pricingSection = ({ title, cards, description, color }) => {
+const pricingSection = ({ title, cards, description, color, button }) => {
   var icon;
   if (title === "Web Development") {
     icon = "fas fa-laptop-code";
@@ -31,6 +31,7 @@ const pricingSection = ({ title, cards, description, color }) => {
               features={obj.features}
               to={obj.to}
               primaryColor={color}
+              button={button}
             />
           );
         })}

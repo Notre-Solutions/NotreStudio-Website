@@ -3,86 +3,95 @@ templateKey: pricing
 pricingPage: 
   title: Pricing
   description: >-
-    We are fun-loving software engineers, with Full Stack development expertise. We have over 10 years experience, with an array of applications under our belts. We both have Bachelor degree's in Computer Since. Our services are focused on website development, to help you connect with your end users in an intuitive and easily managed process.
+    lol
   webDev:
     title: Web Development
     description: >-
-      Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sit amet risus nullam eget felis eget. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet facilisis magna etiam tempor orci eu. Eleifend mi in nulla posuere. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
+      We are fun-loving software engineers, with Full Stack development expertise. We have over 10 years experience, with an array of applications under our belts. We both have Bachelor degree's in Computer Since. Our services are focused on website development, to help you connect with your end users in an intuitive and easily managed process.
     color: 1
+    button: Buy
     cards: 
       - title: Basic
-        amount: 40
+        amount: 41
         currency: £
         period: none
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: One Pager
+        - feature: SEO Friendly
+        - feature: Landing page with slider
+        - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
-      - title: Professional
-        amount: 120
+      - title: Standard
+        amount: 121
         currency: £
         period: none
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: Max 7 pages
+        - feature: SEO Friendly
+        - feature: Custom Content Management System (CMS)        
+        - feature: Custom popups
+        - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
-      - title: Business
-        amount: 241
+      - title: Premium
+        amount: 242
         currency: £
         period: none
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: Max 10 pages
+        - feature: SEO Friendly 
+        - feature: Custom UI/UX Design
+        - feature: Custom Content Management System (CMS)
+        - feature: Plugin Integration
+        - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
   hosting:
-    title: Hosting
+    title: Web Hosting
     description: >-
       We can host your react websites for you, so all you need to worry about is the content.
       Once connected, our continuous integration & continuous deployment pipeline will allow you to make changes to your site and see them live within minutes. 
       Order now for hassle free web hosting. 
     color: 2
+    button: Subscribe
     cards: 
       - title: 1 Month
         amount: 13
         currency: £
         period: MO
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: 1 Month of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
       - title: 3 Month
         amount: 33
         currency: £
         period: MO
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: 3 Months of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
-      - title: 12 Month
+      - title: 1 Year
         amount: 113
         currency: £
         period: MO
         features:
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
-        - feature: Gravida arcu ac tortor 
-        - feature: Gravida arcu ac tortor dignissim convallis aenean
+        - feature: 1 Year of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
   webDesign:
     title: Web Design
     description: >-
       Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sit amet risus nullam eget felis eget. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet facilisis magna etiam tempor orci eu. Eleifend mi in nulla posuere. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
     color: 3
+    button: Buy
     cards: 
       - title: Personal
         amount: 18
