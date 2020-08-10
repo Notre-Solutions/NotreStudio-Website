@@ -1,17 +1,26 @@
 import React from "react";
-import { Link } from "gatsby";
+
+function packagePrice(period, amount, currency) {
+  if (period == "none") {
+    return <span>{`${currency}${amount}`}</span>;
+  } else {
+    return <span>{`${currency}${amount}/${period}`}</span>;
+  }
+}
+
 const pricingCard = ({
   title,
   amount,
   currency,
   period,
   features,
+  button,
   to,
   primaryColor,
 }) => {
   return (
     <div className="col-md-4">
-      <div className="card">
+      <div className="card card__small">
         <div className="card__side card__side--front">
           <div className={`card__picture card__picture-${primaryColor}`}>
             &nbsp;
@@ -38,8 +47,13 @@ const pricingCard = ({
                 {/* <span>{`${currency}${amount}/${period}`}</span> */}
               </p>
             </div>
-            <a href={`${to}`} target='_blank' className="btn btn-primary" title="">
-              Subscribe
+            <a
+              href={`${to}`}
+              target="_blank"
+              className="btn btn-primary"
+              title=""
+            >
+              {button}
             </a>
           </div>
         </div>

@@ -111,28 +111,11 @@ const Landing = ({ data }) => {
             <div className="col-md-12 section-container-spacer">
               <div className="text-center">
                 <h2>What We Offer</h2>
-                <p>
+                <p className="col-md-8 col-md-offset-2">
                   {" "}
                   We are an Agile team so the development process is based on
                   regular and quick iterations to deliver product quickly and in
                   the best possible quality.{" "}
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="fa-container">
-                <i className="fa fa-server fa-3x" aria-hidden="true"></i>
-              </div>
-              <div className="text-center">
-                <h3>Web Hosting</h3>
-              </div>
-              <div>
-                <p>
-                  We can host your website using netlify and help you obtain the
-                  domain name that you want. No more hidden fees or unexpected
-                  extras. We offer a simple monthly service to help you get
-                  online within hours.
                 </p>
               </div>
             </div>
@@ -143,8 +126,8 @@ const Landing = ({ data }) => {
               <div className="text-center">
                 <h3>Web Development</h3>
               </div>
-              <div>
-                <p>
+              <div className="paragraph-dev">
+                <p className="text-center">
                   We use Gatsby to build dynamic and responsive static websites.
                   Our custom CMS solution which is embedded in our websites will
                   give you unlimited customizability without sacrificing design
@@ -156,13 +139,29 @@ const Landing = ({ data }) => {
             </div>
             <div className="col-md-4">
               <div className="fa-container">
+                <i className="fa fa-server fa-3x" aria-hidden="true"></i>
+              </div>
+              <div className="text-center">
+                <h3>Web Hosting</h3>
+              </div>
+              <div className="paragraph-web">
+                <p className="text-center ">
+                  We can host your website using netlify and help you obtain the
+                  domain name that you want. No more hidden fees or unexpected
+                  extras. We offer a simple monthly service to help you get
+                  online within hours.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="fa-container">
                 <i className="fas fa-palette fa-3x" aria-hidden="true"></i>
               </div>
               <div className="text-center">
                 <h3>Web Design</h3>
               </div>
               <div>
-                <p>
+                <p className="text-center">
                   Utilizing Adobe XD and UX Desgin best practices, we offer a
                   full design journey to ensure your website works best for your
                   customers. Our process allows you to be involved from the get
@@ -187,12 +186,8 @@ const Landing = ({ data }) => {
               <div className="text-center">
                 <h2 className="fadeIn">Why Hire Us?</h2>
                 <p className="fadeIn">
-                  {" "}
-                  Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit
-                  amet consectetur adipiscing. Porta non pulvinar neque laoreet.
-                  Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
-                  lacus. Turpis egestas pretium aenean pharetra magna ac. Id
-                  cursus metus aliquam eleifend mi.{" "}
+                  We are Notre Studio. A team of dedicated web designers based
+                  in London. We strive for perfection.
                 </p>
                 <Link
                   to="/projects"

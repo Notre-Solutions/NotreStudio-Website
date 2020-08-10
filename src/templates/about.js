@@ -16,20 +16,16 @@ const about = ({ data }) => {
   console.log(data);
   return (
     <Layout current="about">
-      <div className="">
+      {/* <div className="">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12">
-              <Img
-                className="img-responsive"
-                alt=""
-                fluid={hero.childImageSharp.fluid}
-              />
+            <div className="col-xs-12 text-center page-heading">
+              <h1>ABOUT</h1>
             </div>
           </div>
           <ScrollDown />
         </div>
-      </div>
+      </div> */}
       <div className="section-container">
         <div className="container">
           <div className="row">
@@ -37,12 +33,12 @@ const about = ({ data }) => {
               <div className="text-center" id="team">
                 <h1>{title}</h1>
               </div>
-              <p className="section-container-spacer">{paragraph1}</p>
+              <p className="section-container-spacer ">{paragraph1}</p>
               <div className="text-center padding-top">
                 <h1>{team.title}</h1>
               </div>
-              <div className="row section-container-spacer text-center">
-                <p>{team.paragraph}</p>
+              <div className="row section-container-spacer text-center ">
+                <p className="col-md-8 col-md-offset-2">{team.paragraph}</p>
                 {team.members.map((member) => {
                   return (
                     <>

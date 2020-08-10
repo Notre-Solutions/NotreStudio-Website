@@ -9,11 +9,12 @@ pricingPage:
     description: >-
       We are fun-loving software engineers, with Full Stack development expertise. We have over 10 years experience, with an array of applications under our belts. We both have Bachelor degree's in Computer Since. Our services are focused on website development, to help you connect with your end users in an intuitive and easily managed process.
     color: 1
+    button: Buy
     cards: 
       - title: Basic
         amount: 41
         currency: £
-        period: MO
+        period: none
         features:
         - feature: One Pager
         - feature: SEO Friendly
@@ -23,7 +24,7 @@ pricingPage:
       - title: Standard
         amount: 121
         currency: £
-        period: MO
+        period: none
         features:
         - feature: Max 7 pages
         - feature: SEO Friendly
@@ -34,7 +35,7 @@ pricingPage:
       - title: Premium
         amount: 242
         currency: £
-        period: MO
+        period: none
         features:
         - feature: Max 10 pages
         - feature: SEO Friendly 
@@ -50,6 +51,7 @@ pricingPage:
       Once connected, our continuous integration & continuous deployment pipeline will allow you to make changes to your site and see them live within minutes. 
       Order now for hassle free web hosting. 
     color: 2
+    button: Subscribe
     cards: 
       - title: 1 Month
         amount: 13
@@ -57,6 +59,10 @@ pricingPage:
         period: MO
         features:
         - feature: 1 Month of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
       - title: 3 Month
         amount: 33
@@ -64,6 +70,10 @@ pricingPage:
         period: MO
         features:
         - feature: 3 Months of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
       - title: 1 Year
         amount: 113
@@ -71,12 +81,17 @@ pricingPage:
         period: MO
         features:
         - feature: 1 Year of Web Hosting Services
+        - feature: Technical Support
+        - feature: Continuous Integration
+        - feature: Quick response time
+        - feature: Hassle free set up
         to: https://www.fiverr.com/notrestudio/provide-you-with-website-hosting-services
   webDesign:
     title: Web Design
     description: >-
       Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sit amet risus nullam eget felis eget. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet facilisis magna etiam tempor orci eu. Eleifend mi in nulla posuere. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
     color: 3
+    button: Buy
     cards: 
       - title: Personal
         amount: 18

@@ -17,10 +17,10 @@ const pricing = ({ data }) => {
           <div className="container">
             <div className="row section-container-spacer">
               {/* <div className="col-xs-12"> */}
-                {/* <div className="text-center white-text-container">
+              {/* <div className="text-center white-text-container">
                   <h1>{title}</h1>
                 </div> */}
-                {/* <div className="col-md-8 col-md-offset-2 text-center white-text-container">
+              {/* <div className="col-md-8 col-md-offset-2 text-center white-text-container">
                   <p>{description}</p>
                 </div> */}
               {/* </div> */}
@@ -31,6 +31,7 @@ const pricing = ({ data }) => {
                 cards={webDev.cards}
                 description={webDev.description}
                 color={webDev.color}
+                button={webDev.button}
               />
               <br />
               <PricingSection
@@ -38,6 +39,7 @@ const pricing = ({ data }) => {
                 cards={hosting.cards}
                 description={hosting.description}
                 color={hosting.color}
+                button={hosting.button}
               />
               <br />
               {/* <PricingSection
@@ -66,6 +68,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount
@@ -81,6 +84,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount
@@ -96,6 +100,7 @@ export const pageQuery = graphql`
             title
             description
             color
+            button
             cards {
               title
               amount
