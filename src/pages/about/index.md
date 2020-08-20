@@ -19,7 +19,7 @@ aboutPage:
           Nyasha graduated with a first class honours in Computer Science and Mathematics from Loughborough University. He currently works at a world leading investment bank and is also a freelance web developer and designer. Nyasha spends much of his spare time running and developing his financial knowledge.
 
   paragraph1: >-
-    Nyasha and Stephen met whilst working on financial products together. When they wanted to create a website for their services, there were no venders that were able to give them both a design journey and web development journey. On top they could not get their websites hosted by reliable engineers. This lead to the creation of Notre Studio. Here, we specialise in giving our clients an all in one service; we will be your designers, developers and engineers. You focus on the business. 
+    Nyasha and Stephen met whilst working on financial products together. When they wanted to create a website for their services, there were no vendors that were able to give them both a design journey and web development journey. On top they could not get their websites hosted by reliable engineers. This lead to the creation of Notre Studio. Here, we specialise in giving our clients an all in one service; we will be your designers, developers and engineers. You focus on the business. 
   paragraph2: >-
     We want your brand online; let us help you!
   signature: Nyasha & Stephen

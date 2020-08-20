@@ -7,12 +7,12 @@ pricingPage:
   webDev:
     title: Web Development
     description: >-
-      We are fun-loving software engineers, with Full Stack development expertise. We have over 10 years experience, with an array of applications under our belts. We both have Bachelor degree's in Computer Since. Our services are focused on website development, to help you connect with your end users in an intuitive and easily managed process.
+      We are fun-loving software engineers, with Full Stack development expertise. We have over 8 years experience, with an array of applications under our belts. We both have Bachelor degree's in Computer Science. Our services are focused on website development, to help you connect with your end users in an intuitive and easily managed process.
     color: 1
     button: Buy
     cards: 
       - title: Basic
-        amount: 41
+        amount: 4
         currency: £
         period: none
         features:
@@ -22,7 +22,7 @@ pricingPage:
         - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Standard
-        amount: 121
+        amount: 8
         currency: £
         period: none
         features:
@@ -33,7 +33,7 @@ pricingPage:
         - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Premium
-        amount: 242
+        amount: 12
         currency: £
         period: none
         features:
