@@ -12,7 +12,7 @@ pricingPage:
     button: Buy
     cards: 
       - title: Basic
-        amount: 4
+        amount: 50
         currency: £
         period: none
         features:
@@ -22,7 +22,7 @@ pricingPage:
         - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Standard
-        amount: 8
+        amount: 100
         currency: £
         period: none
         features:
@@ -33,7 +33,7 @@ pricingPage:
         - feature: Responsive Design
         to: https://www.fiverr.com/notrestudio/design-and-implement-professional-websites-903e
       - title: Premium
-        amount: 12
+        amount: 150
         currency: £
         period: none
         features:

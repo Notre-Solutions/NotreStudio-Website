@@ -1,7 +1,7 @@
 ---
 templateKey: projects
 projectsPage:
-  title: Our Latest Work
+  title: Our Latest Templates
   hero: ../../img/Notre-Studio2-02.png
   projects:
     - img: ../../img/One.png
