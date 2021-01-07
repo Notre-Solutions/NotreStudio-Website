@@ -18,18 +18,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`, `700`, `200`, `italic`, `bold`],
-          },
-          {
-            family: `Source Sans Pro`,
-            variants: [`400`, `700`, `200`, `italic`, `bold`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Montserrat`,
+              variants: [`400`, `700`, `200`, `italic`, `bold`],
+            },
+            {
+              family: `Source Sans Pro`,
+              variants: [`400`, `700`, `200`, `italic`, `bold`],
+            },
+          ],
+        },
       },
     },
     {
