@@ -34,14 +34,14 @@ const pricing = ({ data }) => {
                 button={webDev.button}
               />
               <br />
-              <PricingSection
+              {/* <PricingSection
                 title={hosting.title}
                 cards={hosting.cards}
                 description={hosting.description}
                 color={hosting.color}
                 button={hosting.button}
               />
-              <br />
+              <br /> */}
               {/* <PricingSection
                 title={webDesign.title}
                 cards={webDesign.cards}
